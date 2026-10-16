@@ -11,14 +11,14 @@ local p = {
 	red_dark = "#a60f2b",
 	green = "#92d95f",
 	green_dark = "#4ba651",
-	lavender = "#c7add9",
+	lavender = "#6c51a6",
 	lavender_dark = "#bd7ed9",
 	blue = "#296ca6",
 	blue_dark = "#4a7a8a",
 	magenta = "#9b8abf",
 	magenta_dark = "#5b458c",
-	ice = "#662651",
-	ice_dark = "#330925",
+	ice = "#5a4073",
+	ice_dark = "#423c57",
 }
 
 local M = {}
