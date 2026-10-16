@@ -17,8 +17,8 @@ local p = {
 	blue_dark = "#4a7a8a",
 	magenta = "#9b8abf",
 	magenta_dark = "#5b458c",
-	ice = "#5a4073",
-	ice_dark = "#423c57",
+	hyacinth = "#5a4073",
+	hyacinth_dark = "#423c57",
 }
 
 local M = {}
@@ -44,17 +44,17 @@ function M.pick()
 	colorscheme.blue_dark = p.blue_dark
 	colorscheme.magenta = p.magenta
 	colorscheme.magenta_dark = p.magenta_dark
-	colorscheme.ice = p.ice
-	colorscheme.ice_dark = p.ice_dark
+	colorscheme.hyacinth = p.hyacinth
+	colorscheme.hyacinth_dark = p.hyacinth_dark
 
 	colorscheme.terminal = {
 		black = p.grey,
 		red = p.red,
-		green = p.ice,
+		green = p.hyacinth,
 		green = p.lavender,
 		blue = p.blue,
 		magenta = p.magenta,
-		cyan = p.ice,
+		cyan = p.hyacinth,
 		white = p.foreground,
 
 		bright_black = p.grey,
@@ -63,7 +63,7 @@ function M.pick()
 		green = p.lavender_dark,
 		bright_blue = p.blue_dark,
 		bright_magenta = p.green_dark,
-		bright_cyan = p.ice_dark,
+		bright_cyan = p.hyacinth_dark,
 		bright_white = p.foreground,
 
 		background = p.background_low,
