@@ -12,7 +12,7 @@ local function set_terminal_colors(colorscheme)
 	vim.g.terminal_color_0 = t.black
 	vim.g.terminal_color_1 = t.red
 	vim.g.terminal_color_2 = t.green
-	vim.g.terminal_color_3 = t.moon
+	vim.g.terminal_color_3 = t.green
 	vim.g.terminal_color_4 = t.blue
 	vim.g.terminal_color_5 = t.magenta
 	vim.g.terminal_color_6 = t.cyan
@@ -20,7 +20,7 @@ local function set_terminal_colors(colorscheme)
 	vim.g.terminal_color_8 = t.bright_black
 	vim.g.terminal_color_9 = t.bright_red
 	vim.g.terminal_color_10 = t.bright_green
-	vim.g.terminal_color_11 = t.bright_moon
+	vim.g.terminal_color_11 = t.green
 	vim.g.terminal_color_12 = t.bright_blue
 	vim.g.terminal_color_13 = t.bright_magenta
 	vim.g.terminal_color_14 = t.bright_cyan
@@ -49,17 +49,17 @@ local function set_groups(colorscheme)
 		CursorIM = { link = "Cursor" },
 		CursorLine = { bg = colorscheme.background_high },
 		CursorColumn = { link = "CursorLine" },
-		Directory = { fg = colorscheme.ice_dark },
+		Directory = { fg = colorscheme.lavender_dark },
 		DiffAdd = { bg = bg, fg = colorscheme.blue },
 		DiffChange = { bg = bg, fg = colorscheme.magenta },
 		DiffDelete = { bg = bg, fg = colorscheme.red },
-		DiffText = { bg = bg, fg = colorscheme.ice },
+		DiffText = { bg = bg, fg = colorscheme.lavender },
 		EndOfBuffer = { fg = colorscheme.background_high },
 		TermCursor = { link = "Cursor" },
 		TermCursorNC = { link = "Cursor" },
-		OkMsg = { fg = colorscheme.ice_dark },
-		PreInsert = { fg = colorscheme.ice_dark },
-		Added = { fg = colorscheme.ice_dark },
+		OkMsg = { fg = colorscheme.lavender_dark },
+		PreInsert = { fg = colorscheme.lavender_dark },
+		Added = { fg = colorscheme.lavender_dark },
 		ErrorMsg = { fg = colorscheme.red },
 		VertSplit = { fg = colorscheme.background_higher, bg = "NONE" },
 		Winseparator = { fg = colorscheme.background_higher, bg = "NONE" },
@@ -75,11 +75,11 @@ local function set_groups(colorscheme)
 		MatchParen = { fg = colorscheme.background_low, bg = colorscheme.magenta },
 		ModeMsg = { link = "Normal" },
 		MsgArea = { link = "Normal" },
-		MoreMsg = { fg = colorscheme.ice_dark },
+		MoreMsg = { fg = colorscheme.lavender_dark },
 		NonText = { fg = utils.shade(colorscheme.background_low, 0.30) },
 		NormalFloat = { bg = colorscheme.background },
 		FloatBorder = { fg = colorscheme.background_higher },
-		FloatTitle = { fg = colorscheme.ice, bold = true },
+		FloatTitle = { fg = colorscheme.lavender, bold = true },
 		FloatFooter = { fg = colorscheme.grey },
 		NormalNC = { link = "Normal" },
 		Pmenu = { link = "NormalFloat" },
@@ -88,9 +88,9 @@ local function set_groups(colorscheme)
 			bg = utils.shade(colorscheme.magenta_dark, 0.5, colorscheme.background_low),
 		},
 		PmenuThumb = { bg = utils.shade(colorscheme.background_low, 0.20) },
-		Question = { fg = colorscheme.ice_dark },
+		Question = { fg = colorscheme.lavender_dark },
 		QuickFixLine = { fg = colorscheme.magenta },
-		SpecialKey = { fg = colorscheme.brown },
+		SpecialKey = { fg = colorscheme.purple },
 		StatusLine = { fg = colorscheme.foreground, bg = bg },
 		StatusLineNC = {
 			fg = colorscheme.grey,
@@ -105,21 +105,21 @@ local function set_groups(colorscheme)
 		TabLineFill = { link = "TabLine" },
 		TabLineSel = {
 			bg = colorscheme.background_low,
-			fg = colorscheme.ice,
+			fg = colorscheme.lavender,
 		},
 		CurSearch = { bg = utils.shade(colorscheme.magenta, 0.40, colorscheme.background_low) },
 		Search = { bg = utils.shade(colorscheme.magenta, 0.40, colorscheme.background_low) },
 		SpellBad = { undercurl = true, sp = colorscheme.red },
-		SpellCap = { undercurl = true, sp = colorscheme.ice_dark },
+		SpellCap = { undercurl = true, sp = colorscheme.lavender_dark },
 		SpellLocal = { undercurl = true, sp = colorscheme.magenta },
-		SpellRare = { undercurl = true, sp = colorscheme.brown },
+		SpellRare = { undercurl = true, sp = colorscheme.purple },
 		Title = { fg = colorscheme.magenta, bold = true },
 		Visual = {
 			bg = utils.shade(colorscheme.magenta_dark, 0.20, colorscheme.background_low),
 		},
 		VisualNOS = { link = "Visual" },
-		WarningMsg = { fg = colorscheme.brown },
-		Whitespace = { fg = colorscheme.brown_dark },
+		WarningMsg = { fg = colorscheme.purple },
+		Whitespace = { fg = colorscheme.purple_dark },
 		WildMenu = { bg = colorscheme.background_higher },
 		Comment = {
 			fg = colorscheme.grey,
@@ -127,44 +127,44 @@ local function set_groups(colorscheme)
 		},
 
 		String = {
-			fg = colorscheme.ice,
+			fg = colorscheme.lavender,
 			italic = config.italics.strings or false,
 		},
-		Character = { fg = colorscheme.ice },
+		Character = { fg = colorscheme.lavender },
 		Number = { fg = colorscheme.magenta, bold = true },
 		Boolean = { fg = colorscheme.magenta_dark },
 		Float = { link = "Number" },
 
 		Identifier = { fg = colorscheme.foreground },
 		Function = { fg = colorscheme.blue },
-		Method = { fg = colorscheme.moon_dark },
-		Property = { fg = colorscheme.ice_dark },
+		Method = { fg = colorscheme.green_dark },
+		Property = { fg = colorscheme.lavender_dark },
 		Field = { link = "Property" },
 		Parameter = { fg = colorscheme.foreground },
 		Statement = { fg = colorscheme.magenta_dark },
 		Conditional = { fg = colorscheme.magenta_dark },
-		Label = { fg = colorscheme.ice_dark },
+		Label = { fg = colorscheme.lavender_dark },
 		Operator = { fg = colorscheme.blue },
 		Keyword = { link = "Statement", italic = config.italics.keywords or false },
 		Exception = { fg = colorscheme.red },
-		Constant = { fg = colorscheme.moon },
+		Constant = { fg = colorscheme.green },
 
 		PreProc = { link = "Keyword" },
 		Define = { fg = colorscheme.magenta_dark },
 		Macro = { link = "Define" },
-		PreCondit = { fg = colorscheme.ice_dark },
+		PreCondit = { fg = colorscheme.lavender_dark },
 
-		Type = { fg = colorscheme.ice_dark },
+		Type = { fg = colorscheme.lavender_dark },
 		Struct = { link = "Type" },
 		Class = { link = "Type" },
 
 		Attribute = { link = "Character" },
-		Punctuation = { fg = colorscheme.brown },
-		Special = { fg = colorscheme.moon_dark },
+		Punctuation = { fg = colorscheme.purple },
+		Special = { fg = colorscheme.green_dark },
 
 		SpecialChar = { fg = colorscheme.red },
-		Tag = { fg = colorscheme.ice },
-		Delimiter = { fg = colorscheme.brown },
+		Tag = { fg = colorscheme.lavender },
+		Delimiter = { fg = colorscheme.purple },
 		Debug = { fg = colorscheme.magenta_dark },
 
 		Underlined = { underline = true },
@@ -172,15 +172,15 @@ local function set_groups(colorscheme)
 		Italic = { italic = true },
 		Ignore = { fg = colorscheme.background_low },
 		Error = { link = "ErrorMsg" },
-		Todo = { fg = colorscheme.brown, bold = true },
+		Todo = { fg = colorscheme.purple, bold = true },
 
 		Changed = { fg = colorscheme.magenta_dark },
 		Removed = { fg = colorscheme.red },
 
-		DiagnosticOk = { fg = colorscheme.ice_dark },
+		DiagnosticOk = { fg = colorscheme.lavender_dark },
 		DiagnosticError = { link = "Error" },
 		DiagnosticWarn = { link = "WarningMsg" },
-		DiagnosticInfo = { fg = colorscheme.ice_dark },
+		DiagnosticInfo = { fg = colorscheme.lavender_dark },
 		DiagnosticHint = { fg = colorscheme.magenta },
 		DiagnosticVirtualTextError = { link = "DiagnosticError" },
 		DiagnosticVirtualTextWarn = { link = "DiagnosticWarn" },
@@ -197,20 +197,20 @@ local function set_groups(colorscheme)
 		["@text.italic"] = { link = "Italic" },
 		["@text.title"] = { link = "Keyword" },
 		["@text.uri"] = {
-			fg = colorscheme.ice_dark,
-			sp = colorscheme.ice_dark,
+			fg = colorscheme.lavender_dark,
+			sp = colorscheme.lavender_dark,
 			underline = true,
 		},
 		["@text.underline"] = { link = "Underlined" },
-		["@symbol"] = { fg = colorscheme.brown },
+		["@symbol"] = { fg = colorscheme.purple },
 		["@text.todo"] = { link = "Todo" },
 		["@comment"] = { link = "Comment" },
 		["@punctuation"] = { link = "Punctuation" },
-		["@punctuation.bracket"] = { fg = colorscheme.brown },
+		["@punctuation.bracket"] = { fg = colorscheme.purple },
 		["@punctuation.delimiter"] = { fg = colorscheme.magenta_dark },
 		["@punctuation.terminator.statement"] = { link = "Delimiter" },
-		["@punctuation.special"] = { fg = colorscheme.ice },
-		["@punctuation.separator.keyvalue"] = { fg = colorscheme.ice },
+		["@punctuation.special"] = { fg = colorscheme.lavender },
+		["@punctuation.separator.keyvalue"] = { fg = colorscheme.lavender },
 
 		["@text.diff.add"] = { fg = colorscheme.blue },
 		["@text.diff.delete"] = { fg = colorscheme.red },
@@ -218,7 +218,7 @@ local function set_groups(colorscheme)
 		["@constant"] = { link = "Constant" },
 		["@constant.builtin"] = { fg = colorscheme.magenta_dark },
 		["@string"] = { link = "String" },
-		["@string.escape"] = { fg = utils.shade(colorscheme.ice, 0.45) },
+		["@string.escape"] = { fg = utils.shade(colorscheme.lavender, 0.45) },
 		["@string.special"] = { fg = utils.shade(colorscheme.magenta_dark, 0.45) },
 		["@number"] = { link = "Number" },
 		["@boolean"] = { link = "Boolean" },
@@ -237,18 +237,18 @@ local function set_groups(colorscheme)
 		["@operator"] = { link = "Operator" },
 		["@exception"] = { link = "Exception" },
 		["@variable"] = {
-			fg = colorscheme.brown,
+			fg = colorscheme.purple,
 			italic = config.italics.variables or false,
 		},
-		["@variable.builtin"] = { fg = colorscheme.moon },
-		["@variable.member"] = { fg = colorscheme.ice },
+		["@variable.builtin"] = { fg = colorscheme.green },
+		["@variable.member"] = { fg = colorscheme.lavender },
 		["@variable.parameter"] = {
 			fg = colorscheme.foreground,
 			italic = config.italics.variables or false,
 		},
 		["@type"] = { link = "Type" },
-		["@type.definition"] = { fg = colorscheme.ice_dark },
-		["@type.builtin"] = { fg = colorscheme.ice },
+		["@type.definition"] = { fg = colorscheme.lavender_dark },
+		["@type.builtin"] = { fg = colorscheme.lavender },
 		["@type.qualifier"] = { fg = colorscheme.magenta_dark },
 		["@keyword"] = { link = "Keyword" },
 		["@namespace"] = { link = "Type" },
@@ -257,12 +257,12 @@ local function set_groups(colorscheme)
 		["@tag"] = { link = "Tag" },
 		["@tag.builtin"] = { link = "Tag" },
 		["@tag.delimiter"] = { fg = colorscheme.magenta_dark },
-		["@tag.attribute"] = { fg = colorscheme.ice_dark },
+		["@tag.attribute"] = { fg = colorscheme.lavender_dark },
 		["@tag.jsx.element"] = { fg = colorscheme.blue_dark },
-		["@attribute"] = { fg = colorscheme.ice_dark },
+		["@attribute"] = { fg = colorscheme.lavender_dark },
 		["@error"] = { link = "Error" },
 		["@warning"] = { link = "WarningMsg" },
-		["@info"] = { fg = colorscheme.ice_dark },
+		["@info"] = { fg = colorscheme.lavender_dark },
 
 		["@label.json"] = { fg = colorscheme.magenta_dark },
 		["@label.help"] = { link = "@text.uri" },
@@ -306,7 +306,7 @@ function theme.colorscheme()
 		vim.notify(
 			"Neovim 0.8+ is required for emiria colorscheme",
 			vim.log.levels.ERROR,
-			{ title = "Hesperus Theme" }
+			{ title = "Emiria" }
 		)
 		return
 	end
