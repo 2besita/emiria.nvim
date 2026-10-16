@@ -34,13 +34,18 @@ local function set_groups(colorscheme)
 	local bg = config.transparent and "NONE" or colorscheme.background_low
 
 	local groups = {
-		Normal = { fg = colorscheme.foreground, bg = bg },
+        -- snacks
 		SnacksNormal = { fg = colorscheme.foreground, bg = bg },
 		SnacksNormalNC = { fg = colorscheme.foreground, bg = colorscheme.background },
 		SnacksPicker = { fg = colorscheme.foreground, bg = colorscheme.background },
 		SnacksPickerDir = { fg = colorscheme.magenta },
+		SnacksPickerGitStatusIgnored = { fg = colorscheme.magenta },
+		SnacksPickerGitStatusUntracked = { fg = colorscheme.magenta },
 		SnacksPickerDirectory = { fg = colorscheme.hyacinth },
 		SnacksPickerBox = { fg = colorscheme.foreground, bg = colorscheme.background },
+
+
+		Normal = { fg = colorscheme.foreground, bg = bg },
 		LineNr = { fg = colorscheme.grey },
 		ColorColumn = {
 			bg = utils.shade(colorscheme.magenta_dark, 0.5, colorscheme.background_low),
