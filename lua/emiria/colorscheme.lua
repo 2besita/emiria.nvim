@@ -5,8 +5,8 @@ local p = {
 	background_higher = "#ccc4ba",
 	foreground = "#231f23",
 
-	grey = "#f0f0f0",
-	dark_grey = "#5f5f5f",
+	grey = "#deb2cb",
+	dark_grey = "#bf99af",
     red = "#d93240",
 	red_dark = "#a60f2b",
 	green = "#92d95f",
