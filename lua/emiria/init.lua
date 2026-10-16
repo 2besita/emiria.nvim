@@ -81,7 +81,7 @@ local function set_groups(colorscheme)
 		NonText = { fg = utils.shade(colorscheme.background_low, 0.30) },
 		NormalFloat = { bg = colorscheme.background },
 		FloatBorder = { fg = colorscheme.lavender, bg = colorscheme.background },
-		FloatTitle = { fg = colorscheme.lavender, bold = true },
+		FloatTitle = { fg = colorscheme.lavender, bg = colorscheme.background, bold = true },
 		FloatFooter = { fg = colorscheme.grey },
 		NormalNC = { link = "Normal" },
 		Pmenu = { link = "NormalFloat" },
