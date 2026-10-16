@@ -40,7 +40,7 @@ local function set_groups(colorscheme)
 		SnacksPicker = { fg = colorscheme.foreground, bg = colorscheme.background },
 		SnacksPickerDir = { fg = colorscheme.magenta },
 		SnacksPickerDirectory = { fg = colorscheme.hyacinth },
-		SnacksPickerBox = { fg = colorscheme.foreground, bg = background },
+		SnacksPickerBox = { fg = colorscheme.foreground, bg = colorscheme.background },
 		LineNr = { fg = colorscheme.grey },
 		ColorColumn = {
 			bg = utils.shade(colorscheme.magenta_dark, 0.5, colorscheme.background_low),
@@ -80,7 +80,7 @@ local function set_groups(colorscheme)
 		MoreMsg = { fg = colorscheme.hyacinth_dark },
 		NonText = { fg = utils.shade(colorscheme.background_low, 0.30) },
 		NormalFloat = { bg = colorscheme.background },
-		FloatBorder = { fg = colorscheme.lavender },
+		FloatBorder = { fg = colorscheme.lavender, bg = colorscheme.background },
 		FloatTitle = { fg = colorscheme.lavender, bold = true },
 		FloatFooter = { fg = colorscheme.grey },
 		NormalNC = { link = "Normal" },
