@@ -1,4 +1,4 @@
-# Hesperus Nvim
+# Emiria Nvim
 
 ### Screenshot
 ![Screenshot previewing theme](./assets/screenshot.png)
@@ -10,7 +10,7 @@
 #### Lazy:
 ```lua 
 {
-    "emiria-theme/emiria.nvim",
+    "ochitsudayo/emiria.nvim",
     lazy = false,
     priority = 1000,
 }
@@ -33,9 +33,4 @@ or simply run:
 
 <br></br>
 
-#### Credits
-- [datsfilipe](https://github.com/datsfilipe) for their awesome [colorscheme-template](https://github.com/datsfilipe/nvim-colorscheme-template.git)
-
-<br></br>
-
-<p style="text-align: center;">Copyright &copy; 2026 - <a href="https://github.com/tachyonora" target="_blank">tachyonora</a></p>
+<p style="text-align: center;">Copyright &copy; 2026 - <a href="https://github.com/ochitsudayo" target="_blank">ochitsudayo</a></p>
