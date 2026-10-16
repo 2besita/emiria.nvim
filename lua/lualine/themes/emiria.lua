@@ -33,12 +33,12 @@ M.terminal = {
 }
 
 M.command = {
-	a = { bg = colorscheme.brown, fg = colorscheme.background },
-	b = { bg = colorscheme.background_high, fg = colorscheme.brown },
-	c = { bg = bg, fg = colorscheme.brown },
-	x = { bg = bg, fg = colorscheme.brown },
-	y = { bg = colorscheme.background_high, fg = colorscheme.brown },
-	z = { bg = colorscheme.background_higher, fg = colorscheme.brown },
+	a = { bg = colorscheme.lavender, fg = colorscheme.background },
+	b = { bg = colorscheme.background_high, fg = colorscheme.lavender },
+	c = { bg = bg, fg = colorscheme.lavender },
+	x = { bg = bg, fg = colorscheme.lavender },
+	y = { bg = colorscheme.background_high, fg = colorscheme.lavender },
+	z = { bg = colorscheme.background_higher, fg = colorscheme.lavender },
 }
 
 M.visual = {

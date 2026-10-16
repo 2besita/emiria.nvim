@@ -12,7 +12,7 @@ local function set_terminal_colors(colorscheme)
 	vim.g.terminal_color_0 = t.black
 	vim.g.terminal_color_1 = t.red
 	vim.g.terminal_color_2 = t.green
-	vim.g.terminal_color_3 = t.moon
+	vim.g.terminal_color_3 = t.green
 	vim.g.terminal_color_4 = t.blue
 	vim.g.terminal_color_5 = t.magenta
 	vim.g.terminal_color_6 = t.cyan
@@ -20,7 +20,7 @@ local function set_terminal_colors(colorscheme)
 	vim.g.terminal_color_8 = t.bright_black
 	vim.g.terminal_color_9 = t.bright_red
 	vim.g.terminal_color_10 = t.bright_green
-	vim.g.terminal_color_11 = t.bright_moon
+	vim.g.terminal_color_11 = t.bright_green
 	vim.g.terminal_color_12 = t.bright_blue
 	vim.g.terminal_color_13 = t.bright_magenta
 	vim.g.terminal_color_14 = t.bright_cyan
@@ -90,7 +90,7 @@ local function set_groups(colorscheme)
 		PmenuThumb = { bg = utils.shade(colorscheme.background_low, 0.20) },
 		Question = { fg = colorscheme.ice_dark },
 		QuickFixLine = { fg = colorscheme.magenta },
-		SpecialKey = { fg = colorscheme.brown },
+		SpecialKey = { fg = colorscheme.lavender },
 		StatusLine = { fg = colorscheme.foreground, bg = bg },
 		StatusLineNC = {
 			fg = colorscheme.grey,
@@ -112,14 +112,14 @@ local function set_groups(colorscheme)
 		SpellBad = { undercurl = true, sp = colorscheme.red },
 		SpellCap = { undercurl = true, sp = colorscheme.ice_dark },
 		SpellLocal = { undercurl = true, sp = colorscheme.magenta },
-		SpellRare = { undercurl = true, sp = colorscheme.brown },
+		SpellRare = { undercurl = true, sp = colorscheme.lavender },
 		Title = { fg = colorscheme.magenta, bold = true },
 		Visual = {
 			bg = utils.shade(colorscheme.magenta_dark, 0.20, colorscheme.background_low),
 		},
 		VisualNOS = { link = "Visual" },
-		WarningMsg = { fg = colorscheme.brown },
-		Whitespace = { fg = colorscheme.brown_dark },
+		WarningMsg = { fg = colorscheme.lavender },
+		Whitespace = { fg = colorscheme.lavender_dark },
 		WildMenu = { bg = colorscheme.background_higher },
 		Comment = {
 			fg = colorscheme.grey,
@@ -137,7 +137,7 @@ local function set_groups(colorscheme)
 
 		Identifier = { fg = colorscheme.foreground },
 		Function = { fg = colorscheme.blue },
-		Method = { fg = colorscheme.moon_dark },
+		Method = { fg = colorscheme.green_dark },
 		Property = { fg = colorscheme.ice_dark },
 		Field = { link = "Property" },
 		Parameter = { fg = colorscheme.foreground },
@@ -147,7 +147,7 @@ local function set_groups(colorscheme)
 		Operator = { fg = colorscheme.blue },
 		Keyword = { link = "Statement", italic = config.italics.keywords or false },
 		Exception = { fg = colorscheme.red },
-		Constant = { fg = colorscheme.moon },
+		Constant = { fg = colorscheme.green },
 
 		PreProc = { link = "Keyword" },
 		Define = { fg = colorscheme.magenta_dark },
@@ -159,12 +159,12 @@ local function set_groups(colorscheme)
 		Class = { link = "Type" },
 
 		Attribute = { link = "Character" },
-		Punctuation = { fg = colorscheme.brown },
-		Special = { fg = colorscheme.moon_dark },
+		Punctuation = { fg = colorscheme.lavender },
+		Special = { fg = colorscheme.green_dark },
 
 		SpecialChar = { fg = colorscheme.red },
 		Tag = { fg = colorscheme.ice },
-		Delimiter = { fg = colorscheme.brown },
+		Delimiter = { fg = colorscheme.lavender },
 		Debug = { fg = colorscheme.magenta_dark },
 
 		Underlined = { underline = true },
@@ -172,7 +172,7 @@ local function set_groups(colorscheme)
 		Italic = { italic = true },
 		Ignore = { fg = colorscheme.background_low },
 		Error = { link = "ErrorMsg" },
-		Todo = { fg = colorscheme.brown, bold = true },
+		Todo = { fg = colorscheme.lavender, bold = true },
 
 		Changed = { fg = colorscheme.magenta_dark },
 		Removed = { fg = colorscheme.red },
@@ -202,11 +202,11 @@ local function set_groups(colorscheme)
 			underline = true,
 		},
 		["@text.underline"] = { link = "Underlined" },
-		["@symbol"] = { fg = colorscheme.brown },
+		["@symbol"] = { fg = colorscheme.lavender },
 		["@text.todo"] = { link = "Todo" },
 		["@comment"] = { link = "Comment" },
 		["@punctuation"] = { link = "Punctuation" },
-		["@punctuation.bracket"] = { fg = colorscheme.brown },
+		["@punctuation.bracket"] = { fg = colorscheme.lavender },
 		["@punctuation.delimiter"] = { fg = colorscheme.magenta_dark },
 		["@punctuation.terminator.statement"] = { link = "Delimiter" },
 		["@punctuation.special"] = { fg = colorscheme.ice },
@@ -237,10 +237,10 @@ local function set_groups(colorscheme)
 		["@operator"] = { link = "Operator" },
 		["@exception"] = { link = "Exception" },
 		["@variable"] = {
-			fg = colorscheme.brown,
+			fg = colorscheme.lavender,
 			italic = config.italics.variables or false,
 		},
-		["@variable.builtin"] = { fg = colorscheme.moon },
+		["@variable.builtin"] = { fg = colorscheme.green },
 		["@variable.member"] = { fg = colorscheme.ice },
 		["@variable.parameter"] = {
 			fg = colorscheme.foreground,
