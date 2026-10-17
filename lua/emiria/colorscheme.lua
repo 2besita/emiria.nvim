@@ -5,8 +5,8 @@ local p = {
 	background_higher = "#d1d1d1",
 	foreground = "#231f23",
 
-	grey = "#deb2cb",
-	dark_grey = "#bf99af",
+	grey = "#c6d0f5",
+	dark_grey = "#303446",
     red = "#d93240",
 	red_dark = "#a60f2b",
 	green = "#92d95f",
@@ -15,8 +15,8 @@ local p = {
 	lavender_dark = "#bd7ed9",
 	blue = "#296ca6",
 	blue_dark = "#4a7a8a",
-	magenta = "#9386bc",
-	magenta_dark = "#5b458c",
+    magenta = "#c291f2",
+	magenta_dark = "#7553a6",
 	hyacinth = "#5a4073",
 	hyacinth_dark = "#423c57",
 }
