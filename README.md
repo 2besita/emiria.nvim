@@ -10,7 +10,7 @@
 #### Lazy:
 ```lua 
 {
-    "ochitsudayo/emiria.nvim",
+    "2besita/emiria.nvim",
     lazy = false,
     priority = 1000,
 }
