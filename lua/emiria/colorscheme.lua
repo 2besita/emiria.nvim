@@ -5,7 +5,7 @@ local p = {
 	background_higher = "#d1d1d1",
 	foreground = "#231f23",
 
-	grey = "#c6d0f5",
+	grey = "#5f5f5f",
 	dark_grey = "#303446",
     red = "#d93240",
 	red_dark = "#a60f2b",
