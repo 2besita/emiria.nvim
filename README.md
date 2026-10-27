@@ -33,4 +33,4 @@ or simply run:
 
 <br></br>
 
-<p style="text-align: center;">Copyright &copy; 2026 - <a href="https://github.com/ochitsudayo" target="_blank">ochitsudayo</a></p>
+<p style="text-align: center;">Copyright &copy; 2026 - <a href="https://github.com/2besita" target="_blank">2besita</a></p>
